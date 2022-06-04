@@ -1,0 +1,17 @@
+{
+  "name": "fcm_app_server",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EEZeus",
+  "license": "ISC",
+  "dependencies": {
+    "fcm-call": "^2.0.0",
+    "firebase": "^9.8.2",
+    "firebase-admin": "^10.2.0"
+  }
+}
