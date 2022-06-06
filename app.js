@@ -7,7 +7,6 @@ let title = "FCM Notification !";
 
 app.post("/post/:token/:message", (req, res) => {
    console.log("Connected to React");
-
    FCM.FCM(serverKey, req.params.token, title, req.params.message);
 });
 
