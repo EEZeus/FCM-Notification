@@ -5,9 +5,10 @@ const serverKey =
   "AAAAhK4EAJw:APA91bFZBMK5YrPfTc-WXqgyMJ5YTEQxODROKopTDFBvxAVmhxGZ93vyPviJUi-ToYn5Fp7PffjEBw2hgyKh_oB4w0ixsXCELoNWy1k1cJlp75WdYQqcYkVWCx3VQl40fLzll5Ri9arg";
 let title = "FCM Notification !";
 
-app.post("/post/:token/:message", (req, res) => {
+app.post("/post/:token/:message/", (req, res) => {
    console.log("Connected to React");
-   FCM.FCM(serverKey, req.params.token, title, req.params.message);
+  FCM.FCM(serverKey, req.params.token, title, req.params.message)
+  res.send(`<h1>${req.params.message}</h1> sends to <h1>${req.params.token}</h1>`)
 });
 
 const PORT = process.env.PORT || 8080;

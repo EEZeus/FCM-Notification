@@ -1,5 +1,6 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
+
 import {useEffect, useState} from 'react'
 
 import Info from './component/Info'
