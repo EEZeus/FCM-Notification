@@ -30,7 +30,7 @@ function App() {
         </div>
       </div>
       <div className="container">
-        {tokens.map((item) => (
+        {values.map((item) => (
           <Info
             names={names}
             tokens={values}
