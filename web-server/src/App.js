@@ -34,9 +34,9 @@ function App() {
           <Info
             names={names}
             tokens={values}
-            key={values[names.indexOf(item)]}
+            key={item}
             token={item}
-            name={values[names.indexOf(item)]}
+            name={names[values.indexOf(item)]}
           ></Info>
         ))}
       </div>
